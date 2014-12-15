@@ -1,4 +1,4 @@
-﻿package 
+﻿package au.com.aggressivelypassive.mass_extinction
 {
 	import flash.display.DisplayObject;
 	import flash.display.MovieClip;
@@ -39,7 +39,7 @@
 			// hide loader
 			stop();
 			loaderInfo.removeEventListener(ProgressEvent.PROGRESS, progress);
-			var mainClass:Class = getDefinitionByName("Main") as Class;
+			var mainClass:Class = getDefinitionByName("au.com.aggressivelypassive.mass_extinction.Main") as Class;
 			addChild(new mainClass() as DisplayObject);
 		}
 		
